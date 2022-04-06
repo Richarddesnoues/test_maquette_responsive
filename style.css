@@ -10,7 +10,7 @@
 }
 
 
-
+/*-----------------------------------------------LOGO NAVBAR---------------------------------------------*/
 .logo {
     display: flex;
     height: 80px;
@@ -65,6 +65,76 @@ a {
     color: white;
 }
 
+/*-----------------------------------END LOGO NAVBAR-----------------------------------------*/
+
+
+
+/*-----------------------------------BURGER MENU-----------------------------------------------*/
+
+
+.hamburger_bloc {
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top: 84px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+
+
+
+
+
+
+}
+
+.hamburger_lines .line {
+
+    width: 40px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+
+
+
+
+}
+
+.hamburger_lines .line:first-child {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------END BURGER MENU------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------TITLE UNDER NAVABAR----------------------------------*/
+
 .welcome_area {
     background-color: lightgray;
     height: 600px;
@@ -77,6 +147,9 @@ a {
 
 
 }
+
+
+
 
 .welcome {
     color: white;
@@ -97,6 +170,15 @@ a {
     margin-bottom: 100px;
 }
 
+/*------------------------------------------------ END TITLE NAVBAR------------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------------------MAIN AND CHARACTER----------------------------------*/
+
 
 main {
     background-color: white;
@@ -109,6 +191,8 @@ main {
 
 
 }
+
+
 
 h1 {
     color: brown;
@@ -131,6 +215,11 @@ h1 {
     width: 60%;
     margin: auto;
 }
+
+
+
+
+
 
 .hugo {
 
@@ -159,7 +248,9 @@ h1 {
     justify-content: space-between;
     margin-top: 50px;
     text-align: center;
-    padding-left: 50px;
+    padding-left: auto;
+    padding-top: 1em;
+    padding-bottom: 3em;
 
 
 }
@@ -186,10 +277,24 @@ h1 {
 }
 
 
+.p_hugo, .p_imanol, .p_javier {
+    padding:1em; 
+    width: 50%;
+}
 
 
 
 
+/*-------------------------------------------------END MAIN AND CHARACTER-----------------------------------*/
+
+
+
+
+
+
+
+
+/*-------------------------------------------------STATS BANNER--------------------------------------*/ 
 
 .banner {
     height: 250px;
@@ -211,13 +316,28 @@ h1 {
     text-transform: uppercase;
     padding-top: 20px;
 }
+/*--------------------------------------------END STATS BANNER----------------------------------*/
+
+
+
+
+
+/*-------------------------------------------EMPTY BLOCK----------------------------------------*/
 
 
 .vide {
     min-height: 600px;
 }
 
-/***************************************************Formulaire************************/
+
+
+
+/*--------------------------------------------END EMPTY BLOCK-----------------------------------*/
+
+
+
+
+/*----------------------------------------------FORM---------------------------------------*/
 .section_form {
     display: flex;
     flex-direction: column;
@@ -275,7 +395,18 @@ textarea {
 
 
 
-/****************************************************Fin de Formulaire*********************************/
+/*-----------------------------------------------------END FORM-----------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------ABOUT SECTION---------------------------------------*/
+
 
 .cadre_big {
     width: 550px;
@@ -368,6 +499,16 @@ textarea {
     margin: auto;
 }
 
+
+/*--------------------------------------------------------END ABOUT SECTION-----------------------------------*/
+
+
+
+
+
+
+/*--------------------------------------------------------GALLERY--------------------------------------------*/
+
 .gallery h2 {
     color: brown;
     text-transform: uppercase;
@@ -419,6 +560,13 @@ textarea {
     margin-right: 20px;
 }
 
+/*----------------------------------------------------END GALLERY--------------------------------*/
+
+
+
+
+/*---------------------------------------------------LEGAL SECTION----------------------------------*/
+
 .pre_footer {
     background-color: #34564C;
     display: flex;
@@ -428,57 +576,28 @@ textarea {
     color: white;
 }
 
+/*-------------------------------------------------END LEGAL SECTON------------------------------------*/
 
+
+
+
+
+/*-------------------------------------------------FOOTER SECTION--------------------------------------*/
 footer {
     background-color: black;
     color: white;
     min-height: 100px;
 }
 
-.hamburger_bloc {
 
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    position: absolute;
-    top: 84px;
-    right: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    display: none;
+/*---------------------------------------END FOOTER---------------------------------*/
 
 
 
 
 
 
-}
-
-.hamburger_lines .line {
-
-    width: 40px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10px;
-
-
-
-
-}
-
-.hamburger_lines .line:first-child {
-    margin-top: 0;
-}
-
-
-
-
-
-/****************************************Media query*************************/
+/*---------------------------------------MEDIA QUERY------------------------------------*/
 
 @media all and (max-width: 906px) {
     .container {
@@ -557,7 +676,7 @@ footer {
         margin: auto;
     }
 
-    .cadre_h {
+    .cadre_h, .cadre_i {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -567,12 +686,7 @@ footer {
     }
 
 
-    .cadre_i {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 2em;
-    }
+    
 
     .cadre_j {
         display: flex;
@@ -581,6 +695,18 @@ footer {
         padding-top: 2em;
         padding-bottom: 2em;
     }
+
+    .p_hugo, .p_imanol, .p_javier {
+        padding:1em; 
+        width: 50%;
+    }
+
+
+
+
+
+
+
 
     #about {
         display: block;
